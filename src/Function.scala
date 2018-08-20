@@ -24,6 +24,9 @@ object Function {
         
         // 可变参数
         printlnString("字符串1", "字符串2", "字符串3")
+        
+        // 高阶函数
+        println(apply(layout, 10))
     }
     
     /**
@@ -77,4 +80,15 @@ object Function {
             println(arg)
         }
     }
+    
+    /**
+      * 高阶函数
+      * @param f
+      * @param v
+      * @return
+      */
+    def apply(f: Int => String, v: Int) = f(v)
+    def layout[A](x: A) = "[" + x.toString + "]"
+    
+    
 }
