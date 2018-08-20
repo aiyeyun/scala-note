@@ -1,7 +1,7 @@
 /**
-  * 数组
+  * 集合
   */
-object Array {
+object Collection {
     
     def main(args: Array[String]): Unit = {
         
